@@ -1,0 +1,522 @@
+@charset "utf-8";
+/* 右侧客服框 */
+.no .top{
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 200px;
+    width:60px;
+    height:235px;
+    /* border:1px solid #e9ebed; */
+    background: white;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+}
+.no .top li {
+    box-sizing: border-box;
+    position: relative;
+    width:60px;
+    border: 1px solid #999;
+}
+.no .top li:nth-child(1){
+    min-height:60px;
+}
+.no .top li:nth-child(2){
+    min-height:82px;
+}
+.no .top li:nth-child(3){
+    min-height:60px;
+}
+.no .top li:nth-child(1) img{
+    display: block;
+    position: absolute;
+    left:10px;
+    top:6px;
+}
+.no .top li:nth-child(1) p{
+    width:100%;
+    color:#999999;
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    margin-top: 64px;
+    margin-bottom: 5px;
+}
+.no .top li:nth-child(2) img{
+    display: block;
+    position: absolute;
+    left:0px;
+    top:5px;
+    width:100%;
+}
+.no .top li:nth-child(3) img{
+    position: absolute;
+    left:18px;
+    top:12px;
+}
+.no .top li:nth-child(3) p{
+    width:100%;
+    color:#999999;
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    margin-top: 48px;
+    margin-bottom: 8px;
+}
+#borderColor{
+    border: 1px solid #fabe00;
+}
+.no .top .kefu{
+    display: none;
+    box-sizing: border-box;
+    padding:7px;
+    width:100px;
+    height:150px;
+    position: absolute;
+    left: -102px;
+    top: 84px;
+    background: white;
+}
+.no .top .kefu img {
+    width:100%;
+    height:86px;
+}
+.no .top .kefu span{
+    display:block;
+    font-size: 12px;
+    margin:10px 0px 10px 0px;
+    color:#999;
+}
+/* 右侧客服框结束 */
+
+
+/* 头部开始 */
+.header{
+    width:100%;
+    height:42px;
+    background:#f8f9fb;
+}
+/* 头部版心 */
+.main{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+}
+/* 头部导航 */
+.header_list{
+    height:100%;
+    float: right;
+}
+.header_list > li{
+    height:100%;
+    font-size: 14px;
+    float: left;
+    margin-right: 34px;
+    line-height: 42px;
+    position: relative;
+}
+.header_list .list_list{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    width: 370px;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 20px 2px #c8c8c8;
+}
+/* 头部二级导航 */
+.header_list li:nth-child(6) .list_list ul{
+    width:90px;
+    float: left;
+    margin-left: 26px;
+    text-align: center;
+}
+.header_list li:nth-child(6) .list_list ul li{
+    width:100%;
+    float: left;
+    line-height: 30px;
+    cursor: pointer;
+}
+.header_list li:nth-child(6) .list_list ul li:nth-child(1){
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+}
+.header_list li a{
+    font-family: "PingFang SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial";
+    color:#999;
+    cursor: pointer;
+}
+.header_list li:nth-child(6){
+    margin-right: 0px;
+}
+/* 头部结束 */
+
+
+/* logo 搜索框 */
+.nav_main{
+    margin:0 auto;
+    width:1200px;
+    height:100%;
+}
+.nav_main span{
+    float: right;
+    width:60px;
+    height:50px;
+    background:#fabe00;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.nav_main input{
+    padding-left: 10px;
+    width:248px;
+    height:48px;
+    border:1px rgb(250,190,0) solid;
+    vertical-align: top;
+    margin-top: 30px;
+    float: right;
+}
+.nav input::placeholder{
+    font-family: "PingFang SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial";
+    color:#b4a0a0;
+    font-size: 14px;
+}
+.nav_main span i {
+    line-height: 50px;
+    font-size: 20px !important;
+    color:black;
+}
+/* logo */
+.nav h1{
+    width:225px;
+    height:100%;
+    display: inline-block;
+}
+.nav img{
+    margin-top: 10px;
+    width:225px;
+    height:79.5px;
+    cursor: pointer;
+}
+
+
+
+/* 选项卡栏 */
+.tab{
+    margin-top: 5px;
+    width:100%;
+    height:40px;
+}
+.tab_main{
+    width:1200px;
+    margin:0 auto;
+    height:100%;
+}
+/* 动态添加的样式 */
+#active {
+    background:#fabe00;
+    color:white;
+}
+.tab_main a{
+    font-family: "PingFang SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial";
+    float: left;
+    width:234px;
+    height:100%;
+    text-align: center;
+    color:black;
+    font-size: 16px;
+    line-height: 40px;
+}
+.tab_main .ma{
+    width:126px;
+    height:38px;
+    float: right;
+    position: relative;
+}
+.tab_main .ma span{
+    font-family: "PingFang SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial";
+    float: left;
+    width:98px;
+    height:100%;
+    text-align: center;
+    line-height: 38px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.tab_main .ma i {
+    float: left;
+    width:28px;
+    height:100%;
+    line-height: 38px;
+    font-size: 34px;
+    color:black;
+    text-align: center;
+    cursor: pointer;
+}
+/* 隐藏的二维码 */
+.yinma{
+    box-sizing: border-box;
+    background: white;
+    padding: 10px;
+    line-height: 24px;
+    background-color: #fff;
+    border: 1px solid #fabe00;
+    display: none;
+    z-index: 3;
+    position: absolute;
+    left: -83px;
+    top: 40px;
+    cursor: pointer;
+}
+.tab_main .ma .yinma img{
+    margin-bottom: 10px;
+}
+.tab_main .ma .yinma span{
+    display: inline-block;
+    width:50%;
+    background: white;
+    font-family: "PingFang SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial";
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* banner图开始 */
+.banner{
+    width:100%;
+    height:400px;
+    background:rgb(243,240,247);
+}
+.banner .banner_main{
+    width:100%;
+    margin: 0  auto;
+    height:100%;
+    cursor: pointer;
+}
+.banner .banner_main .swiper-slide{
+    overflow: hidden;
+    position: relative;
+}
+.banner .banner_main .swiper-slide img{
+    position: absolute;
+    left : -240px;
+    height:400px;
+}
+
+/* banner图结束 */
+
+
+/* banner图上的层叠下拉菜单 */
+.co{
+    position: relative;
+}
+.b_list{
+    z-index: 2;
+    position: absolute;
+    width: 232px;
+    height: 400px;
+    background-color: #f8f9fb;
+    top: -400px;
+    left: 112px;
+}
+.b_list1,.b_list2,.b_list3{
+    background-color: #fff;
+}
+.b_list h3 span::after,.b_list ul li::after{
+    content: " ";
+    float: right;
+    margin-right: 20px;
+    width: 20px;
+    height: 40px;
+    vertical-align: middle;
+    background: url(images/jiantou.png) no-repeat 0 15px;
+}
+.b_list ul{
+    overflow: hidden;
+    height: 0;
+    transition: 1s;
+}
+.b_list1 ul{
+    height: 280px;
+}
+.b_list ul li:nth-last-child(1):hover{
+    color:#3b9bff;
+}
+.b_list h3,.b_list li{
+    position: relative;
+    height: 40px;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.b_list .b_list1 h3::before{
+    content: " ";
+    display: block;
+    width: 13px;
+    height: 18px;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    background-image: url(images/icon1.png);
+    background-position: -93px -52px;
+}
+.b_list .b_list2 h3::before{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 18px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background-image: url(images/icon2.png);
+    background-repeat: no-repeat;
+}
+.b_list .b_list3 h3::before{
+    content: " ";
+    display: block;
+    width: 15px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    background-image: url(images/icon1.png);
+    background-position: -66px -52px;
+}
+.b_listcon{
+    z-index: 2;
+    position: absolute;
+    left: 232px;
+    top:0;
+    width: 968px;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    display: none;
+}
+
+/* 下拉结束 */
+
+/* 流程 */
+.imgg{
+    height:158px;
+    box-sizing: border-box;
+}
+.imgg .imgg_main{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+.imgg .imgg_main .car {
+    position: relative;
+    float: left;
+    width: 25%;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    font-family: "PingFang SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial";
+}
+.imgg .imgg_main .car img{
+    margin:auto;
+    width: 68px;
+    height: 68px;
+    margin-top: 30px;
+}
+.imgg .imgg_main .car p {
+    margin-bottom: 30px;
+}
+.imgg .imgg_main .car .dian{
+    position: absolute;
+    top: 62px;
+    left: 253px;
+    width: 100px;
+}
+.imgg .imgg_main .car .dian span{
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    border-radius: 7px;
+    background: #ddd;
+}
+
+/* 流程结束 */
+
+/* 内容区块 */
+
+
+
+
+/* 标题区块 */
+.con{
+    background:#f3f4f7;
+}
+.con .con_main{
+    width:1200px;
+    margin:0 auto;
+}
+.iphone{
+    height:697px;
+}
+.iphone .iphone_header{
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height:110px;
+    box-sizing: border-box;
+}
+.iphone .iphone_header p{
+    font-size: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.iphone .iphone_header a{
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    height:30px;
+    margin-left: 26px;
+    line-height: 28px;
+    color: #666;
+    vertical-align: top;
+}
+
+/* 标题结束 */ 
+
+
+/* 正文开始 */
+.iphone .iphone_left{
+    width:194px;
+    height:587px;
+    background: white;
+    float: left;
+    box-sizing: border-box;
+}
+.iphone_left .iphone_left-small{
+    float: left;
+    width:97px;
+    height:98px;
+}
+.iphone_left .iphone_left-small img{
+    color:#999;
+}
+.iphone .iphone_right{
+    width:963px;
+    height:587px;
+    float: left;
+    box-sizing: border-box;
+    background:green;
+}
+
