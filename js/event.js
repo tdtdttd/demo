@@ -128,3 +128,16 @@ for(i= 0;i<aa.length;i++){
         this.style.borderBottom = "0";
     }
 }
+var iphone = document.querySelectorAll(".iphone_left-small img")
+console.log(iphone)
+for(i = 0;i< iphone.length;i++){
+    iphone[i].onclick= function(){
+        clearcolor2(iphone)
+        this.style.filter = "grayscale(0)"
+    }
+}
+function clearcolor2(a){
+    for(i=0;i<a.length;i++){
+        a[i].style.filter = "grayscale(1)"
+    }
+}

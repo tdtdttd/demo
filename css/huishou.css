@@ -334,7 +334,7 @@
     width: 20px;
     height: 40px;
     vertical-align: middle;
-    background: url(images/jiantou.png) no-repeat 0 15px;
+    background: url(../images/jiantou.png) no-repeat 0 15px;
 }
 .b_list ul{
     overflow: hidden;
@@ -364,7 +364,7 @@
     position: absolute;
     top: 12px;
     left: 15px;
-    background-image: url(images/icon1.png);
+    background-image: url(../images/icon1.png);
     background-position: -93px -52px;
 }
 .b_list .b_list2 h3::before{
@@ -375,7 +375,7 @@
     position: absolute;
     top: 12px;
     left: 10px;
-    background-image: url(images/icon2.png);
+    background-image: url(../images/icon2.png);
     background-repeat: no-repeat;
 }
 .b_list .b_list3 h3::before{
@@ -386,7 +386,7 @@
     position: absolute;
     top: 12px;
     left: 15px;
-    background-image: url(images/icon1.png);
+    background-image: url(../images/icon1.png);
     background-position: -66px -52px;
 }
 .b_listcon{
@@ -497,6 +497,7 @@
 
 
 /* 正文开始 */
+
 .iphone .iphone_left{
     width:194px;
     height:587px;
@@ -505,12 +506,18 @@
     box-sizing: border-box;
 }
 .iphone_left .iphone_left-small{
+    border:1px solid rgb(243,244,247);
     float: left;
-    width:97px;
-    height:98px;
+    width:95px;
+    height:96px;
+    cursor: pointer;
 }
 .iphone_left .iphone_left-small img{
-    color:#999;
+    display: block;
+    filter: grayscale(1)
+}
+.iphone_left .iphone_left-small:nth-child(1) img{
+    filter: grayscale(0)
 }
 .iphone .iphone_right{
     width:963px;
