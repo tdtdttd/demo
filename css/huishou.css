@@ -327,7 +327,7 @@
 .b_list1,.b_list2,.b_list3{
     background-color: #fff;
 }
-.b_list h3 span::after,.b_list ul li::after{
+.b_list  .b_ti span::after,.b_list .b_list11 li::after{
     content: " ";
     float: right;
     margin-right: 20px;
@@ -336,18 +336,19 @@
     vertical-align: middle;
     background: url(../images/jiantou.png) no-repeat 0 15px;
 }
-.b_list ul{
+.b_list .b_list11{
     overflow: hidden;
     height: 0;
     transition: 1s;
 }
-.b_list1 ul{
+.b_list1 .b_list11{
     height: 280px;
 }
-.b_list ul li:nth-last-child(1):hover{
+
+.b_list  .b_list11 li:nth-last-child(1):hover{
     color:#3b9bff;
 }
-.b_list h3,.b_list li{
+.b_list .b_list1 h3,.b_list .b_list1 li,.b_list .b_list2 h3,.b_list .b_list2 li,.b_list .b_list3 h3,.b_list .b_list3 li{
     position: relative;
     height: 40px;
     padding-left: 40px;
@@ -390,6 +391,7 @@
     background-position: -66px -52px;
 }
 .b_listcon{
+    box-sizing: border-box;
     z-index: 2;
     position: absolute;
     left: 232px;
@@ -401,7 +403,71 @@
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
     display: none;
 }
-
+.b_listcon .b_listcon1{
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+    padding: 20px 0;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+.b_listcon .b_listcon1 li{
+    position: relative;
+    float: left;
+    display: table-cell;
+    width: 270px;
+    height: 70px;
+    margin-right: 45px;
+    font-size: 12px;
+    line-height: 70px;
+}
+.b_listcon .b_listcon1 li img{
+    display: inline-block;
+    width: 25px;
+    margin: 0 27px;
+    margin-left: 36px;
+    vertical-align: middle;
+}
+.b_listcon .b_listcon1 li h3{
+    display: inline-block;
+    width: 110px;
+    height: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.b_listcon .b_listcon1 li a{
+    width: 58px;
+    height: 24px;
+    line-height: 22px;
+    background: #fff;
+    float: right;
+    color: #f15340;
+    border: 1px solid #f01300;
+    text-align: center;
+    margin-top: 23px;
+    transition: .4s;
+}
+.b_listcon .b_listcon1 li:nth-last-of-type(1)+a{
+    position: absolute;
+    right: 65px;
+    bottom: 41px;
+    padding: 6px 17px;
+    color: #4378fd;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #4378fd;
+    cursor: pointer;
+    transition: .3s;
+}
+.b_listcon .b_listcon1 li:nth-last-of-type(1)+a:hover{
+    color:#fff;
+    background:#4378fd;
+}
 /* 下拉结束 */
 
 /* 流程 */
@@ -497,7 +563,7 @@
 
 
 /* 正文开始 */
-
+ /* 缩小图片开始 */
 .iphone .iphone_left{
     width:194px;
     height:587px;
@@ -524,6 +590,183 @@
     height:587px;
     float: left;
     box-sizing: border-box;
-    background:green;
+    position: relative;
 }
+.iphone .iphone_right ul{
+    float: left;
+    width: 968px;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.iphone .iphone_right .right_main1{
+    display: block;
+}
+.dis{
+    display: block;
+}
+.iphone .iphone_right ul li{
+    float: left;
+    width: 231px;
+    height: 289px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #fff;
+}
+.iphone .iphone_right ul li img{
+    width: 126px;
+    height: 126px;
+    margin-top: 40px;
+    display:inline-block;
+}
+.iphone .iphone_right ul li h3{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 26px;
+}
+.iphone .iphone_right ul li p:nth-of-type(1){
+    color: #999;
+    font-size: 12px;
+}
+.iphone .iphone_right ul li p:nth-of-type(2){
+    clear: both;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff5f43;
+}
+/* 缩小图片结束 */
+
+
+
+
+/* 评价开始 */
+
+
+.middle h2,.video_title h2{
+    font-size: 36px;
+    padding-top: 50px;
+    line-height: 36px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+.middle hr,.video_title hr{
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 28px;
+    margin-bottom: 24px;
+    border-top: 1px solid #fabe00;
+}
+.middle .p,.video_title .p{
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+}
+.comment{
+    position: relative;
+}
+.cass{
+    height:100%;
+    overflow: hidden;
+}
+.comment li{
+    width: 292.5px;
+    margin-right: 10px; 
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    float: left;
+    height: 460px;
+}
+.comment li:nth-last-of-type(1){
+    margin-right: 0;
+}
+.com_con {
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.com_con .cass_con p:nth-of-type(1){
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #656b6f;
+    text-align: center;
+}
+.com_con .cass_con img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.com_con .cass_con  p:nth-of-type(2){
+    margin-top: 20px;
+    color: #3b3d40;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.com_con .cass_con  p:nth-of-type(3){
+    margin-top: 10px;
+    font-size: 12px;
+    color: #656b6f;
+}
+.com_con .cass_con  p:nth-of-type(4){
+    margin-top: 10px;
+    font-size: 12px;
+    color: #656b6f;
+}
+.comment span:nth-of-type(1){
+    display: block;
+    width: 20px;
+    height: 48px;
+    position: absolute;
+    top: 49%;
+    left: -30px;
+    cursor: pointer;
+    line-height: 48px;
+    text-align: center;
+    color:#666;
+    font-size: 18px;
+    font-weight: 900;
+}
+.comment span:nth-of-type(1):hover{
+    color:#3b9bff;
+}
+.comment span:nth-of-type(2):hover{
+    color:#3b9bff;
+}
+.comment span:nth-of-type(2){
+    display: block;
+    width: 20px;
+    height: 48px;
+    position: absolute;
+    top: 49%;
+    right: -30px;
+    cursor: pointer;
+    line-height: 48px;
+    text-align: center;
+    color:#666;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+
+
+/* 评价结束 */
+
 

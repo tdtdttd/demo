@@ -1,3 +1,5 @@
+// 控制头部导航颜色
+
 var a = document.querySelectorAll("li a")
 for(i = 0;i < a.length;i++){
     a[i].onmouseover = function(){
@@ -7,6 +9,8 @@ for(i = 0;i < a.length;i++){
         this.style.color = "#999"
     }
 }
+
+// 控制标题颜色
 var tab = document.querySelectorAll(".tab_main a")
 for(i = 0;i < tab.length;i++){
     tab[i].onmouseover = function(){
@@ -18,11 +22,14 @@ for(i = 0;i < tab.length;i++){
         tab[0].id= "active"
     }
 }
+// 清楚id名
 function td(arr){
     for(i = 0;i < arr.length;i++){
         arr[i].id = ""
     }
 }
+
+// 控制二维码的display
 var ma = document.querySelector(".ma")
 var yinma = document.querySelector(".yinma")
     ma.onmouseover = function(){
@@ -32,6 +39,9 @@ var yinma = document.querySelector(".yinma")
     ma.onmouseout = function(){
         yinma.style.display = "none"
     }
+
+
+    // 控制右侧客服框的鼠标事件
 var tp = document.querySelectorAll(".no .top ul li")
 var TP = document.querySelector(".no .top")
 for(i = 0;i < tp.length;i++){
@@ -50,6 +60,8 @@ for(i = 0;i < tp.length;i++){
         ma.style.display = "none"
     }
 }
+
+// 回到顶部
 var topp = document.querySelector(".top ul .tt")
 function top1(){
     var gg = document.body.scrollTop|| document.documentElement.scrollTop;
@@ -64,6 +76,10 @@ function top1(){
 topp.onclick = function(){
     top1();
 }
+
+
+
+// 控制导航栏的二级导航
 var lis = document.querySelectorAll(".header_list>li")
 var yinlis = document.querySelector(".list_list")
 lis[5].onmouseover = function(){
@@ -72,6 +88,8 @@ lis[5].onmouseover = function(){
 lis[5].onmouseout = function(){
     yinlis.style.display = "none"
 }
+
+// 控制手机估价信息的display
 var left = document.querySelector(".b_list")
 var con = document.querySelector(".b_listcon")
 left.onmouseover =function(){
@@ -80,6 +98,8 @@ left.onmouseover =function(){
 left.onmouseout =function(){
     con.style.display = "none"
 }
+
+// 控制下拉收缩框
 var h = document.querySelectorAll(".co .b_list div")
 console.log(h)
 for(i = 0;i<h.length;i++){
@@ -94,6 +114,9 @@ function wid(a){
         a[i].lastElementChild.style.height = 0 +"px";
     }
 }
+
+
+// 控制banner图左侧的列表背景颜色
 var li1 = document.querySelectorAll(".co .b_list .b_list1 ul li");
 var li2 = document.querySelectorAll(".co .b_list .b_list2 ul li");
 var li3 = document.querySelectorAll(".co .b_list .b_list3 ul li");
@@ -117,6 +140,10 @@ function clearcolor(a){
         a[i].style.background = ""
     }
 }
+
+
+
+// 控制手机信息板块标题的颜色
 var aa = document.querySelectorAll(".iphone .iphone_header a")
 for(i= 0;i<aa.length;i++){
     aa[i].onmouseover = function(){
@@ -128,16 +155,45 @@ for(i= 0;i<aa.length;i++){
         this.style.borderBottom = "0";
     }
 }
+
+// 控制手机信息板块切换
 var iphone = document.querySelectorAll(".iphone_left-small img")
+var rightul = document.querySelectorAll(".iphone_right ul")
 console.log(iphone)
-for(i = 0;i< iphone.length;i++){
+for(let i = 0;i< iphone.length;i++){
     iphone[i].onclick= function(){
         clearcolor2(iphone)
+        cleardis(rightul)
+        console.log(i)
+        this.parentElement.parentElement.nextElementSibling.children[i].style.display = "block"
         this.style.filter = "grayscale(0)"
     }
 }
+
+// 左侧小图图片颜色的变化
 function clearcolor2(a){
     for(i=0;i<a.length;i++){
         a[i].style.filter = "grayscale(1)"
+    }
+}
+// 隐藏出现
+function cleardis(b){
+    for(i=0;i<b.length;i++){
+        b[i].style.display = "none"
+    }
+}
+
+
+// 估价板块文字背景颜色变化
+var gujia = document.querySelectorAll(".b_listcon1 li a")
+console.log(gujia)
+for(i=0;i<gujia.length;i++){
+    gujia[i].onmouseover = function(){
+        this.style.color = "#fff"
+        this.style.background = "#f15340"
+    }
+    gujia[i].onmouseout = function(){
+        this.style.color = " #f15340"
+        this.style.background = "#f15340"
     }
 }
