@@ -197,3 +197,56 @@ for(i=0;i<gujia.length;i++){
         this.style.background = "#fff"
     }
 }
+
+// 新闻板块轮播  做切换效果
+
+var newa = document.querySelectorAll(".newscon div")
+var btn = document.querySelector(".news_main-right i")
+var count = 1;
+console.log(newa)
+console.log(btn)
+btn.onclick = function(){
+    console.log(count)
+    clearclass(newa)
+    if(count > 4){
+        count = 0
+    }
+    newa[count].id += "index"
+    count += 1
+}
+function clearclass(a){
+    for(i=0;i<a.length;i++){
+        a[i].id = ""
+    }
+}
+
+
+// 新闻板块鼠标事件
+
+
+var span1 = document.querySelectorAll(".newscon a")
+console.log(span1)
+for(i=0;i<span1.length;i++){
+    span1[i].onmouseover = function(){
+        this.children[1].style.color = "#3b9bff"
+        // console.log(this.children[1])
+    }
+    span1[i].onmouseout = function(){
+        this.children[1].style.color = "#9f9f9f"
+    }
+}
+
+
+// 合作伙伴图标特效
+
+
+var fr = document.querySelectorAll(".friend-list li img")
+console.log(fr)
+for(i=0;i<fr.length;i++){
+    fr[i].onmouseover = function(){
+        this.style.transform = "scale(1.2)";
+    }
+    fr[i].onmouseout= function(){
+        this.style.transform = "scale(1)";
+    }
+}

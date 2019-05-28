@@ -648,7 +648,7 @@
 /* 评价开始 */
 
 
-.middle h2,.title-h2,.card .card-h2 ,.news-h2{
+.middle h2,.title-h2,.card .card-h2 ,.news-h2,.friend-h2{
     font-size: 36px;
     padding-top: 50px;
     line-height: 36px;
@@ -656,7 +656,7 @@
     font-weight: 900;
     text-align: center;
 }
-.middle hr,.video_title hr,.card hr,.news-hr{
+.middle hr,.video_title hr,.card hr,.news-hr,.friend-hr{
     width: 50px;
     margin: 0 auto;
     margin-top: 28px;
@@ -666,7 +666,7 @@
 .card hr{
     border-top:1px solid white;
 }
-.middle .p,.video_title .p, .card .card-p,.news-p{
+.middle .p,.video_title .p, .card .card-p,.news-p,.friend-p{
     margin-bottom: 40px;
     font-size: 16px;
     color: #999;
@@ -994,7 +994,7 @@
 .news .news_main .news_main-left,.news_main-right{
     float: left;
 }
-.news a{
+.news .news_main-left a{
     overflow: hidden;
     display: block;
     width: 892px;
@@ -1033,6 +1033,7 @@
     box-sizing: border-box;
     float: left;
     position: relative;
+    left:10px;
     width: 297px;
     height: 500px;
     padding-left: 20px;
@@ -1057,6 +1058,199 @@
     font-size: 16px;
 }
 
+.newscon{
+    width:100%;
+    position: relative;
+    height: 400px;
+    margin-top: 22px;
+    color: #9f9f9f;
+    float: left;
+}
+.newscon div{
+    position: absolute;
+    float: left;
+    transition: 1s;
+    display: none;
+}
+#index{
+    display: block;
+}
+.newscon  a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #9f9f9f;
+}
+.newscon-1 a:nth-child(1) span:nth-child(1),.newscon-1 a:nth-child(2) span:nth-child(1),.newscon-1 a:nth-child(3) span:nth-child(1){
+    background-color: black;
+}
+.newscon  a span:nth-child(1){
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #9f9f9f;
+}
+.newscon  a span:nth-child(2){
+    display: inline-block;
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
 
 
 /* news end */
+
+
+
+/* 合作伙伴开始 */
+
+
+.friend{
+    background: #fff;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    width:1440px;
+    margin-left: -120px;
+}
+.friendcon{
+    width:1200px;
+    margin:0 auto;
+}
+.friend-list{
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,.12);
+}
+.friend-list li{
+    float: left;
+    width: 25%;
+    border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+.friend-list li img{
+    position: relative;
+    left: 42px;
+    height: 120px;
+    transition: all .3s linear;
+    display: inline-block;
+}
+
+/* 合作伙伴结束 */
+
+
+
+
+/* 尾部开始 */
+
+
+.footer{
+    overflow: hidden;
+    width:1440px;
+    margin-left: -120px;
+    margin-bottom: -40px;
+    background-color: #fabe00;
+}
+.footercon{
+    width:1200px;
+    margin:0 auto;
+}
+.footercon .footer-list li{
+    float: left;
+    width: 25%;
+    line-height: 46px;
+    text-align: center;
+}
+.footercon .footer-list li img{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin: 17px 0;
+    vertical-align: middle;
+}
+.footercon .footer-list li span{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+
+
+/* 黑尾 */
+
+
+.bottom{
+    width:1440px;
+    margin-left: -120px;
+    overflow: hidden;
+    margin-top: 40px;
+    background-color: #3b3d40;
+}
+.bottomcon1{
+    width: 1200px!important;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bottomcon1 ul li{
+    float: right;
+    width: 9%;
+    height: 240px;
+    text-align: left;
+    margin-left: 7%;
+}
+.bottomcon1 ul li h3{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 45px;
+}
+.bottomcon1 ul li a{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #9fa3a8;
+    cursor: pointer;
+}
+.bottomcon1 ul li:nth-last-child(1){
+    width: 240px;
+    margin-left: 0;
+}
+.bottomcon1 ul li:nth-last-child(1) .pp img{
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 45px;
+}
+.bottomcon2{
+    width: 1200px!important;
+    margin: 0 auto;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #666;
+}
+.bottomcon2 h4{
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+.bottomcon3{
+    font-size: 18px;
+    line-height: 55px;
+    color: #6d7074;
+    text-align: center;
+    border-top: 1px solid #666;
+}
+.bottomcon3 a{
+    color: #6d7074;
+}
+/* 尾部结束 */
