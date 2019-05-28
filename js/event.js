@@ -194,6 +194,6 @@ for(i=0;i<gujia.length;i++){
     }
     gujia[i].onmouseout = function(){
         this.style.color = " #f15340"
-        this.style.background = "#f15340"
+        this.style.background = "#fff"
     }
 }

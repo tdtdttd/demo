@@ -648,7 +648,7 @@
 /* 评价开始 */
 
 
-.middle h2,.video_title h2{
+.middle h2,.title-h2,.card .card-h2 {
     font-size: 36px;
     padding-top: 50px;
     line-height: 36px;
@@ -656,14 +656,14 @@
     font-weight: 900;
     text-align: center;
 }
-.middle hr,.video_title hr{
+.middle hr,.video_title hr,.card hr{
     width: 50px;
     margin: 0 auto;
     margin-top: 28px;
     margin-bottom: 24px;
     border-top: 1px solid #fabe00;
 }
-.middle .p,.video_title .p{
+.middle .p,.video_title .p, .card .card-p{
     margin-bottom: 40px;
     font-size: 16px;
     color: #999;
@@ -763,10 +763,89 @@
     font-size: 18px;
     font-weight: 900;
 }
-
-
-
-
+.video{
+    overflow: hidden;
+    width: 1200px!important;
+    margin: 0 auto;
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+.v1{
+    height: 360px;
+    float: left;
+    box-sizing: border-box;
+}
+.v1 img{
+    width: 212px;
+    height: 360px;
+}
+.v2{
+    box-sizing: border-box;
+    width: 370px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #fff;
+    float: left;
+    height:360px;
+}
+.v2 .v2-h2{
+    font-weight: 400;
+    font-size: 22px;
+    color: #3b3d40;
+    letter-spacing: 1px;
+}
+.v2 .v2-p{
+    color: #b7b7b7;
+    margin-top: 24px;
+    font-size: 14px;
+}
+.v2 .xian{
+    border-top: 1px solid #eee;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+.v2 .v2-p2{
+    display: block;
+    font-size: 16px;
+    color: #fabe00;
+}
+.v3{
+    box-sizing: border-box;
+    width: 618px;
+    padding: 16px 18px;
+    background: #fff;
+    cursor: pointer;
+    height:360px;
+    float: left;
+}
+.v3 .v3-1{
+    position: relative;
+    width: 582px;
+    height: 328px;
+}
+.v3 .v3-1 video{
+    width: 582px;
+    height: 328px;
+}
 /* 评价结束 */
 
+
+
+
+/* card部分开始 */
+
+
+.bg{
+    margin-top: 130px;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    background: #fabe00;
+    transform: skew(0deg,4deg);
+}
+
+
+/* card部分结束 */
 
