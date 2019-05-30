@@ -1,3 +1,4 @@
+
 // 控制头部导航颜色
 
 var a = document.querySelectorAll("li a")
@@ -248,5 +249,19 @@ for(i=0;i<fr.length;i++){
     }
     fr[i].onmouseout= function(){
         this.style.transform = "scale(1)";
+    }
+}
+
+// 尾部文字颜色改变
+
+
+var bbaa = document.querySelectorAll(".bottomcon1 ul li a")
+console.log(bbaa)
+for(i=0;i<bbaa.length;i++){
+    bbaa[i].onmouseover = function(){
+        this.style.color = "#3b9bff"
+    }
+    bbaa[i].onmouseout = function(){
+        this.style.color = "#9fa3a8"
     }
 }
