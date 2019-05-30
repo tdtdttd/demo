@@ -1,4 +1,3 @@
-
 var a = document.querySelectorAll("li a")
 for(i = 0;i < a.length;i++){
     a[i].onmouseover = function(){
@@ -17,6 +16,19 @@ lis[5].onmouseout = function(){
     yinlis.style.display = "none"
 }
 var btn1 = document.querySelectorAll(".header-list")
+var bb = document.querySelectorAll(".header-list li>div")
+console.log(bb)
+for(s=0;s<bb.length;s++){
+    bb[s].onclick = function(){
+        clearborder(bb)
+        this.style.border = "1px solid green"
+    }
+}
+function clearborder(a){
+    for(q=0;q<a.length;q++){
+        a[q].style.border = "1px solid #ebebeb"
+    }
+}
 for(b=0;b<btn1.length;b++){
     this.onclick = function(){
         var a = document.querySelector(".prolist")
@@ -41,21 +53,20 @@ axios({
     })
     }
 }
-    
 
+var lli = document.querySelectorAll(".prolist li")
+// console.log(lli)
 
-
-
-
-
-
-// function handle(data){
-//     //console.log(data.result[0][0]);
-//     var str = ''
-//     for(var i = 0 ; i < data.result.length ; i++){
-//         str += `
-//             <option value="${data.result[i][0]}"></option>
-//         `
-//     }
-//     dataList.innerHTML = str;
-// }
+for(c=0;c<lli.length;c++){
+    lli[c].onmouseover =function(){
+        cm(lli)
+        this.style.marginTop = "-10px"
+    }
+}
+function cm(e){
+    for(c=0;c<e.length;c++){
+        e[c].onmouseover =function(){
+            this.style.marginTop = "0"
+        }
+    }
+}
