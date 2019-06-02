@@ -1,0 +1,142 @@
+@charset "utf-8";
+.header {
+	width: 100%;
+	height: 42px;
+	background: #f8f9fb;
+}
+/* 头部版心 */
+.main {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+/* 头部导航 */
+.header_list {
+	height: 100%;
+	float: right;
+}
+
+.header_list > li {
+	height: 100%;
+	font-size: 14px;
+	float: left;
+	margin-right: 34px;
+	line-height: 42px;
+	position: relative;
+}
+
+.header_list .list_list {
+	display: none;
+	z-index: 999;
+	position: absolute;
+	width: 370px;
+	top: 100%;
+	right: 0;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 1px 20px 2px #c8c8c8;
+}
+/* 头部二级导航 */
+.header_list li:nth-child(6) .list_list ul {
+	width: 90px;
+	float: left;
+	margin-left: 26px;
+	text-align: center;
+}
+
+.header_list li:nth-child(6) .list_list ul li {
+	width: 100%;
+	float: left;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.header_list li:nth-child(6) .list_list ul li:nth-child(1) {
+	font-size: 13px;
+	font-weight: 700;
+	color: #333;
+}
+
+.header_list li a {
+	font-family: "PingFang SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial";
+	color: #999;
+	cursor: pointer;
+}
+
+.header_list li:nth-child(6) {
+	margin-right: 0px;
+}
+.bottom {
+	overflow: hidden;
+	margin-top: 40px;
+	background-color: #3b3d40;
+}
+
+.bottomcon1 {
+	width: 1200px!important;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.bottomcon1 ul li {
+	float: right;
+	width: 9%;
+	height: 240px;
+	text-align: left;
+	margin-left: 7%;
+}
+
+.bottomcon1 ul li h3 {
+	color: #fff;
+	font-size: 16px;
+	margin-top: 45px;
+}
+
+.bottomcon1 ul li a {
+	position: relative;
+	display: block;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #9fa3a8;
+	cursor: pointer;
+}
+
+.bottomcon1 ul li:nth-last-child(1) {
+	width: 240px;
+	margin-left: 0;
+}
+
+.bottomcon1 ul li:nth-last-child(1) .pp img {
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 45px;
+}
+
+.bottomcon2 {
+	width: 1200px!important;
+	margin: 0 auto;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #666;
+}
+
+.bottomcon2 h4 {
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.bottomcon3 {
+	font-size: 18px;
+	line-height: 55px;
+	color: #6d7074;
+	text-align: center;
+	border-top: 1px solid #666;
+}
+
+.bottomcon3 a {
+	color: #6d7074;
+}

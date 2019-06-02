@@ -40,7 +40,7 @@
 <div class="header">
 	<div class="main">
 		<ul class="header_list">
-			<li><a href="deng.html">登录</a></li>
+			<li class="dl"><a href="deng.html">登录</a></li>
 			<li><a href="#">帮助中心</a></li>
 			<li><a href="#">关于我们</a></li>
 			<li><a href="#">服务条款</a></li>
@@ -1110,10 +1110,29 @@
 </html>
 <script src="js/event.js"></script>
 <script src="min-js/swiper.min.js"></script>
+<script src = "min-js/cookie.js"></script>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
         pagination: {
             el: '.swiper-pagination',
         },
     })
+</script>
+<script>
+	var ab = document.cookie;
+	console.log(ab)
+	var b = ab.split(";");
+	console.log(b)
+	var bbb = document.querySelector(".dl a")
+	for(var i = 0, k = b.length; i< k;i++){
+        var item = b[i].split("=");
+        if(item[0] == 'phone'){
+			console.log (item[i]);
+			if(ab == ""){
+			bbb.innerHTML = "登录"
+			}else{
+			bbb.innerHTML = item[1]
+			}
+		}
+	}
 </script>

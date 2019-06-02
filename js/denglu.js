@@ -1,3 +1,4 @@
+
 var str1 = `
 <div class="content">
 <div class="logo">
@@ -51,6 +52,12 @@ Login.prototype = {
         //把登陆用户名和密码交给后端    ajax
         var phone = document.querySelector('.phone');
         var password = document.querySelector('.password');
+        var a = phone.value
+        var b = password.value
+        var d = new Date();
+        d.setDate(d.getDate() + 1);
+        document.cookie = 'phone='+a+';path=/;expires=' + d;
+        document.cookie = 'password='+b+';path=/;expires=' + d;
         axios({
             method : 'get',
             url : 'http://localhost/huishou/php/denglu.php',

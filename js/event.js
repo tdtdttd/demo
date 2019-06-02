@@ -1,4 +1,5 @@
 
+
 // 控制头部导航颜色
 
 var a = document.querySelectorAll("li a")
@@ -265,3 +266,5 @@ for(i=0;i<bbaa.length;i++){
         this.style.color = "#9fa3a8"
     }
 }
+
+    
